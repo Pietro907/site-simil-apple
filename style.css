@@ -1,0 +1,199 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* region header */
+
+.header_content {
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.header_logo {
+    padding-left: 1rem;
+}
+
+.header_icons>svg {
+    padding: 0 1rem;
+}
+
+.header_content>nav>ul>li {
+    padding: 0 3rem;
+    list-style: none;
+}
+
+
+/* end region header */
+
+.video_smarthwatch {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+/* region section */
+
+.section {
+    /* border: yellow 1px solid; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.section.in_page .title,
+.panel.in_page .panel_title {
+    transform: scale(1.2);
+    opacity: 1;
+    /* border: lime 1px solid; */
+}
+
+.title {
+    /* border: red 1px solid; */
+    text-align: center;
+    height: 100vh;
+    font-size: 50px;
+    z-index: 1;
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 50%;
+    margin-left: 25%;
+}
+
+
+/* end region section */
+
+/* region panel */
+
+.panel {
+    width: 100%;
+    height: 100vh;
+    background: #c7c7c7;
+    position: absolute;
+    left: 0;
+}
+
+.panel_title {
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    font-size: 50px;
+    z-index: 1;
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 50%;
+    margin-left: 25%;
+}
+
+.spec,
+.spec2 {
+    background: #f6f6f6;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    bottom: -9.8rem;
+    left: -0.5rem;
+    padding: 0 0 0 1rem;
+    margin: 0;
+
+    & img {
+        width: 50%;
+    }
+}
+
+.descr_smartwatch_line,
+.descr_smartwatch_item {
+    color: black;
+}
+
+.descr_smartwatch_line {
+    position: relative;
+    top: -2.5rem;
+    left: -13rem;
+}
+
+.descr_smartwatch_item {
+    max-width: 200px;
+    padding: 3.5rem 0 0;
+    position: relative;
+    top: 0;
+    left: -25rem;
+}
+
+
+/* end region panel */
+
+
+/* region smartwacth lft/rgt */
+
+/* .panel_watch_left {
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 50%;
+    margin: 12.5% 25% 0;
+} */
+
+/* end region smartwacth lft/rgt */
+
+/* region utilities */
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* end region utilities */
+
+/* region media query */
+
+@media screen and (min-width: 320px) {
+    body, header{
+        width: 100%;
+    }
+    .header_logo{
+        padding: 0 0.5rem;
+    }
+    .header_content>nav{
+        max-width: 320px;
+    }
+    .header_content>nav>ul {
+        margin: 0;
+        padding: 0;
+    }
+    .header_content>nav>ul>li{
+        padding: 0 0.2rem;
+    }
+}.header_icons>svg {
+    padding: 0 0.5rem;
+}
+
+/* endregion media query */
